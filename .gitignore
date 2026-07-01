@@ -1,0 +1,16 @@
+# WorkBuddy project data
+.workbuddy/
+.trae/
+
+# Darwin Skill evaluation artifacts
+test-prompts.json
+results.tsv
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
