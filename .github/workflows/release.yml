@@ -18,7 +18,7 @@ jobs:
       - name: Package skill
         run: |
           rm -rf pkg && mkdir -p pkg/master-lyricist
-          cp SKILL.md LICENSE README.md pkg/master-lyricist/
+          cp SKILL.md README.md pkg/master-lyricist/
           cp -r references pkg/master-lyricist/
           cd pkg && zip -r "../master-lyricist-skill-${GITHUB_REF_NAME}.zip" master-lyricist
 
