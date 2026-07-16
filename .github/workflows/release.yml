@@ -1,0 +1,30 @@
+name: Release Skill Package
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Package skill
+        run: |
+          rm -rf pkg && mkdir -p pkg/master-lyricist
+          cp SKILL.md LICENSE README.md pkg/master-lyricist/
+          cp -r references pkg/master-lyricist/
+          cd pkg && zip -r "../master-lyricist-skill-${GITHUB_REF_NAME}.zip" master-lyricist
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: master-lyricist-skill-${{ github.ref_name }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
