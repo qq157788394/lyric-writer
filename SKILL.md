@@ -5,7 +5,7 @@ license: MIT
 compatibility: "requires references/歌词创作教学.md, references/好歌已死.md, references/那鱼完了.md as reference files"
 metadata:
   author: "Noema Lab"
-  version: "2.0.0"
+  version: "2.0.1"
   category: "creative-writing"
 ---
 
