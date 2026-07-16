@@ -2,6 +2,27 @@
 .workbuddy/
 .trae/
 
+# Common AI Agent / coding assistant directories
+.claude/
+.codeium/
+.cursor/
+.windsurf/
+.aider/
+.continue/
+.roo/
+.cline/
+.kilocode/
+.gemini/
+.openai/
+.qwen/
+.deepseek/
+.agents/
+.agent/
+.ai/
+.zed/
+.composer/
+.devcontainer/
+
 # Darwin Skill evaluation artifacts
 test-prompts.json
 results.tsv
