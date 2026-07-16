@@ -34,6 +34,8 @@ master-lyricist 是一个 Agent Skill，将 Noema Lab《歌词创作教学.md》
 npx skills add qq157788394/master-lyricist
 ```
 
+仓库仅包含源码。发布包（zip）在 **GitHub Release** 提供，安装方式如下。
+
 或手动安装到各 runtime 的 skills 目录：
 
 | Runtime            | 安装路径                              |
@@ -123,6 +125,8 @@ master-lyricist/
     └── 那鱼完了.md              # 10 维分析报告参考样本（低分歌曲）
 ```
 
+> 以上为仓库源码。`dist/` 与发布包（`*.zip`）属于构建 / 发布产物，**不纳入 git 仓库**，仅在 GitHub Release 中提供（详见下文「发布」）。
+
 ---
 
 ## 10 维评分体系
@@ -143,6 +147,17 @@ master-lyricist/
 | J    | Hook、金句与传播适配       | 5    |
 
 ---
+
+## 发布
+
+本仓库只托管源码，发布包通过 **GitHub Release** 分发。流程如下：
+
+1. 更新 `SKILL.md` frontmatter 中的 `version` 与设计文档版本号；
+2. 提交变更并打 tag：`git tag vX.Y.Z && git push origin vX.Y.Z`；
+3. GitHub Actions 自动将 `SKILL.md` / `LICENSE` / `README.md` / `references/` 打包为 `master-lyricist-skill-<版本>.zip`，并作为该 tag 对应 Release 的附件上传；
+4. 用户从 Release 页面下载安装，或直接使用 `npx skills add` 从仓库安装。
+
+> 本地 `dist/` 仅为打包中间产物，已纳入 `.gitignore`，不会提交到仓库。
 
 ## 版本
 

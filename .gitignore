@@ -35,3 +35,7 @@ results.tsv
 .idea/
 *.swp
 *.swo
+
+# Build / release artifacts (distributed via GitHub Release, not committed)
+dist/
+*.zip
