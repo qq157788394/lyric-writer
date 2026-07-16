@@ -1,4 +1,4 @@
-# 歌词创作 Skill（lyric-writer）设计规格
+# 歌词创作 Skill（master-lyricist）设计规格
 
 > 基于 Noema Lab《歌词创作教学.md》完整 19 章方法论体系
 > 将面向"人"的 AI 辅助教程转化为 AI Agent 主动驱动的渐进式歌词创作 Skill
@@ -406,12 +406,12 @@
 
 ### 7.3 目标文件
 
-全新编写 `skills/lyric-writer/SKILL.md`，不依赖、不参考、不更新现有的 `.workbuddy/skills/lyric-creation-workflow/SKILL.md`。SKILL.md frontmatter 包含 `name`、`description`、`license: MIT`、`compatibility` 和 `metadata`（author/version/category）。
+全新编写 `skills/master-lyricist/SKILL.md`，不依赖、不参考、不更新现有的 `.workbuddy/skills/lyric-creation-workflow/SKILL.md`。SKILL.md frontmatter 包含 `name`、`description`、`license: MIT`、`compatibility` 和 `metadata`（author/version/category）。
 
 ### 7.4 最终文件结构
 
 ```
-lyric-writer/               # 独立可发布 Skill 仓库
+master-lyricist/               # 独立可发布 Skill 仓库
 ├── SKILL.md                        # Skill 核心文件（含 6 节点工作流 + 禁止事项清单 + 异常 fallback 表）
 ├── README.md                       # 项目说明（安装、使用、设计理念、10 维评分体系）
 ├── LICENSE                         # MIT 许可证
@@ -420,7 +420,7 @@ lyric-writer/               # 独立可发布 Skill 仓库
 │   ├── 歌词创作教学.md              # 方法论源头（19 章完整教程）
 │   ├── 好歌已死.md                  # 10 维分析报告参考样本（高分歌曲）
 │   └── 那鱼完了.md                  # 10 维分析报告参考样本（低分歌曲）
-└── lyric-writer-skill-design.md  # 本设计文档
+└── master-lyricist-skill-design.md  # 本设计文档
 ```
 
 ### 7.5 依赖文件

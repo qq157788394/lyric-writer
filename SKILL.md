@@ -1,5 +1,5 @@
 ---
-name: "lyric-writer"
+name: "master-lyricist"
 description: "渐进式歌词创作助手。基于Noema Lab《歌词创作教学.md》完整19章方法论，AI主动引导用户从碎片念头到完整歌词定稿。涵盖灵感挖掘、参数设定、结构设计、初稿生成、分层打磨、终稿分析6个阶段。Invoke when user wants to write lyrics, create a song, or has any creative idea for lyrics. 中文触发词：写歌词、创作歌曲、作词、填词、帮我写歌、写一首关于XX的歌、创作一首XX的歌。"
 license: MIT
 compatibility: "requires references/歌词创作教学.md, references/好歌已死.md, references/那鱼完了.md as reference files"
@@ -9,7 +9,7 @@ metadata:
   category: "creative-writing"
 ---
 
-# 歌词创作 Skill（lyric-writer）
+# 歌词创作 Skill（master-lyricist）
 
 > 基于 Noema Lab《歌词创作教学.md》完整 19 章方法论体系
 > 将教程中面向"人"的 AI 辅助操作流程转化为 AI Agent 主动驱动的渐进式创作 Skill
